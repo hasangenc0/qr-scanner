@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_marginBottom="56dp"
+        android:paddingBottom="56dp">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical">
+
+        <TableLayout
+                     android:id="@+id/checking_menu_buttons"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="3dip"
+                     android:stretchColumns="*">
+                <TableRow>
+                    <Button
+                            android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
+                            android:drawablePadding="8dp"
+                            android:id="@+id/btn_scan_check"
+                            android:text="@string/scan"
+                            app:backgroundTint="@color/colorSuccess"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"/>
+
+                    <Button
+                            android:drawableLeft="@drawable/ic_clear_all_black_24dp"
+                            android:drawablePadding="8dp"
+                            android:text="@string/clear"
+                            android:id="@+id/btn_scan_checking_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="@color/colorDanger"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"/>
+                </TableRow>
+            </TableLayout>
+
+        <ScrollView
+                android:layout_below="@id/checking_menu_buttons"
+                android:id="@+id/scroll_view_checking"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="4dip">
+
+                <TableLayout
+                    android:id="@+id/stepwise_tab_table"
+                    android:layout_margin="3dip"
+                    android:background="@drawable/table_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan_confirm_fragment"
+            android:orientation="vertical"/>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:visibility="gone"
+            android:theme="@style/CircularProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</ScrollView>

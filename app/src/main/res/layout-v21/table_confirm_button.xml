@@ -1,0 +1,10 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="40dp"
+    android:padding="4dip"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/border_top"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    android:drawableTop="@drawable/ic_done_black_24dp"/>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hasan QR Scanner</string>
+    <!-- Strings related to login -->
+    <string name="welcome">"Welcome !"</string>
+    <string name="checking_tab">"STEPWISE"</string>
+    <string name="confirm_tab">"INFINITE"</string>
+    <string name="scan">"Scan"</string>
+    <string name="scan_bar_code">"Scan"</string>
+    <string name="homepage_link">"Scann QR"</string>
+    <string name="logout">"Logout"</string>
+    <string name="unknown_error_message">"An error occurred"</string>
+    <string name="clear">"Clear"</string>
+</resources>
